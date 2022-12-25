@@ -83,10 +83,10 @@ var _ = Describe("Server", func() {
 			})
 		})
 
-		Context("server command is run with a typo. eg: servre", func() {
+		Context("server command is run with a typo. eg: severe", func() {
 			It("should print server command suggestion and exit with status code 1", func() {
 				outWriter, errWriter := gbytes.NewBuffer(), gbytes.NewBuffer()
-				serverArgs := []string{"servre"}
+				serverArgs := []string{"severe"}
 				session := helper.RunCommand(terrascanBinaryPath, outWriter, errWriter, serverArgs...)
 				serverUtils.ValidateExitCodeAndOutput(session, helper.ExitCodeOne, filepath.Join("golden", "server_typo_help.txt"), false)
 			})
