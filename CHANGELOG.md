@@ -186,7 +186,7 @@
 - Update mkdocs-material to 8.2.6 [\#1195](https://github.com/accurics/terrascan/pull/1195) ([pyup-bot](https://github.com/pyup-bot))
 - add CODEOWNERS for terrascan [\#1194](https://github.com/accurics/terrascan/pull/1194) ([patilpankaj212](https://github.com/patilpankaj212))
 - Adds: git in container which is required for go build [\#1193](https://github.com/accurics/terrascan/pull/1193) ([Rchanger](https://github.com/Rchanger))
-- typo: Change "desitnation" to "destination". [\#1192](https://github.com/accurics/terrascan/pull/1192) ([adyavanapalli](https://github.com/adyavanapalli))
+- typo: Change "destination" to "destination". [\#1192](https://github.com/accurics/terrascan/pull/1192) ([adyavanapalli](https://github.com/adyavanapalli))
 - Add security policy [\#1189](https://github.com/accurics/terrascan/pull/1189) ([bkizer-tenable](https://github.com/bkizer-tenable))
 - skip vuln test for dependabot [\#1185](https://github.com/accurics/terrascan/pull/1185) ([Rchanger](https://github.com/Rchanger))
 - Perform: go mod tidy [\#1184](https://github.com/accurics/terrascan/pull/1184) ([Rchanger](https://github.com/Rchanger))
