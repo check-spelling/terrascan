@@ -1,4 +1,4 @@
-Error: unknown command "servre" for "terrascan"
+Error: unknown command "severe" for "terrascan"
 
 Did you mean this?
 	server

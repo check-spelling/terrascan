@@ -37,7 +37,7 @@ func LoadIacFile(absFilePath, terraformVersion string) (allResourcesConfig outpu
 	// load current iac file
 	hclFile, diags := parser.LoadConfigFile(absFilePath)
 	if hclFile == nil {
-		errMessage := fmt.Sprintf("error occured while loading config file '%s'. error:\n%v\n", absFilePath, getErrorMessagesFromDiagnostics(diags))
+		errMessage := fmt.Sprintf("error occurred while loading config file '%s'. error:\n%v\n", absFilePath, getErrorMessagesFromDiagnostics(diags))
 		zap.S().Debug(errMessage)
 		return allResourcesConfig, fmt.Errorf(errMessage)
 	}
@@ -72,7 +72,7 @@ func LoadIacFile(absFilePath, terraformVersion string) (allResourcesConfig outpu
 		resourceConfig.TerraformVersion = terraformVersion
 		resourceConfig.ProviderVersion = providerVersion
 
-		// if root module do not have provider contraints fetch the latest compatible version
+		// if root module do not have provider constraints fetch the latest compatible version
 		if resourceConfig.ProviderVersion == "" {
 			resourceConfig.ProviderVersion = LatestProviderVersion(managedResource.Provider, terraformVersion)
 		}
